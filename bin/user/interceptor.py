@@ -2402,6 +2402,8 @@ class EcowittClient(Consumer):
             'PASSKEY', 'dateutc', 'stationtype', 'model', 'freq', 'baromrelin',
             'maxdailygust', 'eventrainin', 'hourlyrainin', 'dailyrainin',
             'weeklyrainin', 'monthlyrainin', 'yearlyrainin',
+            'rrain_piezo', 'erain_piezo', 'hrain_piezo', 'drain_piezo',
+            'wrain_piezo', 'mrain_piezo', 'yrain_piezo',
             'pm25_avg_24h_ch1', 'winddir_avg10m', 'windspdmph_avg10m',
         ]
 
