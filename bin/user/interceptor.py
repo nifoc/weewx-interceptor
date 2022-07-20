@@ -416,6 +416,9 @@ class Consumer(object):
         'lightningcount': 'lightningcount',
         'lightning_last_det_time': 'lightning_time',
         'lightning_distance': 'lightning_distance',
+        'lightning_battery_status': 'wh57_battery',
+        'soilMoistBatteryVoltage1': 'soil_moist_battery_voltage_1',
+        'soilTempBatteryVoltage1': 'soil_temp_battery_voltage_1',
     }
 
     def default_sensor_map(self):
@@ -2390,13 +2393,13 @@ class EcowittClient(Consumer):
             'pm25_ch1': 'pm2_5',
             'pm25batt1': 'pm25_battery',
             # Custom params
-            'soilbatt1': 'soilMoistBatteryVoltage1',
+            'soilbatt1': 'soil_moist_battery_voltage_1',
             'tf_ch1': 'soil_temperature_1',
-            'tf_batt1': 'soilTempBatteryVoltage1',
+            'tf_batt1': 'soil_temp_battery_voltage_1',
             'lightning': 'lightning_distance',
             'lightning_time': 'lightning_time',
             'lightning_num': 'lightningcount',
-            'wh57batt': 'lightning_battery_status',
+            'wh57batt': 'wh57_battery',
         }
 
         IGNORED_LABELS = [
