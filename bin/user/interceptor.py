@@ -2368,7 +2368,7 @@ class EcowittClient(Consumer):
             'soilmoisture6': 'soil_moisture_6',
             'soilmoisture7': 'soil_moisture_7',
             'soilmoisture8': 'soil_moisture_8',
-            'soilbatt1': 'soil_battery_1',
+            #'soilbatt1': 'soil_battery_1',
             'soilbatt2': 'soil_battery_2',
             'soilbatt3': 'soil_battery_3',
             'soilbatt4': 'soil_battery_4',
@@ -2390,12 +2390,13 @@ class EcowittClient(Consumer):
             'pm25_ch1': 'pm2_5',
             'pm25batt1': 'pm25_battery',
             # Custom params
+            'soilbatt1': 'soilMoistBatteryVoltage1',
             'tf_ch1': 'soil_temperature_1',
-            'tf_batt1': 'soil_temp1_battery',
+            'tf_batt1': 'soilTempBatteryVoltage1',
             'lightning': 'lightning_distance',
             'lightning_time': 'lightning_time',
             'lightning_num': 'lightningcount',
-            'wh57batt': 'wh57_battery',
+            'wh57batt': 'lightning_battery_status',
         }
 
         IGNORED_LABELS = [
